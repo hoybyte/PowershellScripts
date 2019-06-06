@@ -22,9 +22,6 @@ Install Shortel Communicator app on remote computer
         Write-Verbose "Creating Session to $computer"
         $session = New-PSSession -ComputerName $computer
 
-        # Output to prompt what computer we are sending the command to
-        Write-Verbose "Invoking Shortel Communicator Start-Process command on computer: $computer"
-
         # Invoke the scriptblock into the powershell session we created earlier
         Write-Verbose "Installing Application to $computer"
 
